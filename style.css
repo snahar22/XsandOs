@@ -4,11 +4,11 @@
 body, html{
   width:100vw;
   height: 100vh;
-  color: #FDC12A;
+  color: black;
   display: flex;
   justify-content: center;
   font-family: sans-serif;
-  background-color: #235789;
+  background-color: white;
 }
 
 .container{
@@ -38,8 +38,8 @@ h1{
 .column{
 	width: 400px;
 	height: 165px;
-	background-color:#2AAFF5;
-	border: 3px solid #FDC12A;
+	background-color:white;
+	border: 3px solid black;
 	text-align: center;
 	font-size: 8em;
 }
@@ -47,8 +47,8 @@ h1{
 	width: 150px;
 	height: 90px;
 	padding: 20px 10px; 
-	background-color: #2AAFF5;
-	border: 1px solid #FDC12A;
+	background-color: white;
+	border: 1px solid black;
 	font-size: 2.3em;
 	text-transform: uppercase;
 	position: relative;
@@ -62,8 +62,8 @@ h1{
 	width: 250px;
 	height: 100px;
 	padding: 20px 10px; 
-	background-color: #2AAFF5;
-	border: 1px solid #FDC12A;
+	background-color: white;
+	border: 1px solid black;
 	font-size: 2em;
 	text-transform: uppercase;
 	position: relative;
