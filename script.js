@@ -5,10 +5,10 @@ $('.column').click(function(){
  if($(this).text() == "" && state == true){
  	if(turn % 2 == 1){
  		$(this).append("X");
- 		$(this).css('color', '000000');
+ 		$(this).css('color', '#000000');
  	}else{
  		$(this).append("O");
- 		$(this).css('color', '#ffffff');
+ 		$(this).css('color', 'red');
  	}
  	turn++;
  	if(getWinner() != -1 && getWinner() != ""){
