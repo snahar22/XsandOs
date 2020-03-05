@@ -21,8 +21,6 @@ $('.column').click(function(){
  			document.getElementById('results').innerHTML = "O Wins";
  		}
  		state = false;
- 		document.getElementById("results").style.display = 'block'; 
- 		document.getElementById('results').innerHTML = "Draw";
  	}
  }
 $('.reset').click(function(){
