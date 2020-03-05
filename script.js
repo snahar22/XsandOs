@@ -1,26 +1,32 @@
 $(document).ready(function(){
+document.getElementById("results").style.display = 'none'; 
 let turn = 1;
 let state = true;
 $('.column').click(function(){
  if($(this).text() == "" && state == true){
  	if(turn % 2 == 1){
  		$(this).append("X");
- 		$(this).css('color', '#000000');
+ 		$(this).css('color', '#ffffff');
  	}else{
  		$(this).append("O");
- 		$(this).css('color', 'red');
+ 		$(this).css('color', '#5CACFC');
  	}
  	turn++;
  	if(getWinner() != -1 && getWinner() != ""){
  		if(getWinner()=="X"){
- 			document.getElementById('result').innerHTML = "X Wins";
+            document.getElementById("results").style.display = 'block'; 
+ 			document.getElementById('results').innerHTML = "X Wins";
  		}else{
- 			document.getElementById('result').innerHTML = "O Wins";
+ 			document.getElementById("results").style.display = 'block'; 
+ 			document.getElementById('results').innerHTML = "O Wins";
  		}
  		state = false;
  	}
  }
 $('.reset').click(function(){
+  location.reload();
+}); 
+$('#results').click(function(){
   location.reload();
 }); 
 });
@@ -59,10 +65,3 @@ return -1;
 }
 
 });
-
-
-
-
-
-
-
